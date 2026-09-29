@@ -1,0 +1,166 @@
+{
+  "model": "jev-latest",
+  "state": "<see state.txt>",
+  "questions": {
+    "q0": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset ARC-c (https://huggingface.co/datasets/allenai/ai2_arc) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q1": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset ARC-e (https://huggingface.co/datasets/allenai/ai2_arc) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q2": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset BoolQ (https://huggingface.co/datasets/google/boolq) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q3": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset HellaSwag (https://rowanzellers.com/hellaswag/) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q4": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset PiQA (https://github.com/ybisk/ybisk.github.io/tree/master/piqa) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q5": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset SciQ (https://huggingface.co/datasets/allenai/sciq) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q6": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset TriviaQA (https://huggingface.co/datasets/mandarjoshi/trivia_qa) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q7": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset WinoGrande (https://huggingface.co/datasets/allenai/winogrande) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q8": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The zero-shot benchmark datasets (ARC-c, ARC-e, BoolQ, HellaSwag, PiQA, SciQ, TriviaQA, WinoGrande, Lambada) have been acquired as described in Section 3.1.\nRequirement: Code for acquiring the zero-shot benchmark dataset Lambada (https://huggingface.co/datasets/EleutherAI/lambada_openai) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q9": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: CFG is shown to cause a nontrivial and consistent boost in performance across the suite of zero-shot benchmarks, with the exception of ARC (challenge) and Winogrande. Results follow Section 3.1 and Table 5.\nRequirement: The evaluation setup has been reproduced, either by directly using the Language Model Evaluation Harness (Gao et al., 2021, github.com/EleutherAI/lm-evaluation-harness) or by reproducing its setup"
+    },
+    "q10": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the GPT2 family of models\nRequirement: Classifier-Free Guidance (CFG) inference is implemented as described in equation 7 in Section 2.2 such that it can be run on the GPT2 family of models"
+    },
+    "q11": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the GPT2 family of models\nRequirement: The implementation of CFG which can be used for the GPT2 family of models includes a mutable (not hardcoded) hyper-parameter which can be used to specify the guidance strength"
+    },
+    "q12": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the GPT2 family of models\nRequirement: As outlined in Section 3.1, the implementation of CFG which can be used for the GPT2 family of models starts the unconditional prompt $\\log p_{\\theta}(w_i | w_{j < i})$ with the last token of the initial prompt for the GPT2 family of models"
+    },
+    "q13": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the Pythia family of models\nRequirement: Classifier-Free Guidance (CFG) inference is implemented as described in equation 7 in Section 2.2 such that it can be run on the Pythia family of models"
+    },
+    "q14": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the Pythia family of models\nRequirement: The implementation of CFG which can be used for the Pythia family of models includes a mutable (not hardcoded) hyper-parameter which can be used to specify the guidance strength"
+    },
+    "q15": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the Pythia family of models\nRequirement: As outlined in Section 3.1, the implementation of CFG which can be used for the Pythia family of models starts the unconditional prompt $\\log p_{\\theta}(w_i | w_{j < i})$ with the last token of the initial prompt for the Pythia family of models"
+    },
+    "q16": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: The zero-shot benchmark outlined in section 3.1 has been run on the GPT2 model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively) for at least 5 of the 9 datasets shown in Table 5. Performance on the benchmark has been noted.\nRequirement: The zero-shot benchmark outlined in section 3.1 has been run on the GPT2 model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively)"
+    },
+    "q17": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: The zero-shot benchmark outlined in section 3.1 has been run on the GPT2 model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively) for at least 5 of the 9 datasets shown in Table 5. Performance on the benchmark has been noted.\nRequirement: The zero-shot benchmark outlined in section 3.1 has been run on the GPT2 model family for at least 5 of the 9 datasets shown in Table 5."
+    },
+    "q18": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: The zero-shot benchmark outlined in section 3.1 has been run on the GPT2 model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively) for at least 5 of the 9 datasets shown in Table 5. Performance on the benchmark has been noted.\nRequirement: The performance of the evaluated models from the GPT2 model family on the zero-shot benchmark (accuracy or exact match, depending on the dataset) has been measured for at least 5 of the 9 datasets shown in Table 5."
+    },
+    "q19": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: The zero-shot benchmark outlined in section 3.1 has been run on the Pythia model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively) for at least 5 of the 9 datasets shown in Table 5. Performance on the benchmark has been noted.\nRequirement: The zero-shot benchmark outlined in section 3.1 has been run on the Pythia model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively)"
+    },
+    "q20": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: The zero-shot benchmark outlined in section 3.1 has been run on the Pythia model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively) for at least 5 of the 9 datasets shown in Table 5. Performance on the benchmark has been noted.\nRequirement: The zero-shot benchmark outlined in section 3.1 has been run on the Pythia model family for at least 5 of the 9 datasets shown in Table 5."
+    },
+    "q21": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: The zero-shot benchmark outlined in section 3.1 has been run on the Pythia model family with and without CFG (guidance strength \\gamma=1 and \\gamma=1.5 respectively) for at least 5 of the 9 datasets shown in Table 5. Performance on the benchmark has been noted.\nRequirement: The performance of the evaluated models from the Pythia model family on the zero-shot benchmark (accuracy or exact match, depending on the dataset) has been measured for at least 5 of the 9 datasets shown in Table 5."
+    },
+    "q22": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the produced outputs/logs show the stated result.\n\nParent requirement: CFG is shown to cause a nontrivial and consistent boost in performance across the suite of zero-shot benchmarks, with the exception of ARC (challenge) and Winogrande. Results follow Section 3.1 and Table 5.\nRequirement: The measured performance metrics on the zero-shot benchmark show that using CFG (\\gamma=1.5) outperforms not using CFG (\\gamma=1) across all evaluated models and datasets, with the exception of ARC (challenge) and Winogrande."
+    },
+    "q23": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The GSM8K and AQuA datasets for arithmetic reasoning tasks have been acquired, as used in Section 3.2.\nRequirement: Code for acquiring the GSM8K dataset for arithmetic reasoning tasks (https://huggingface.co/datasets/openai/gsm8k) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q24": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: The GSM8K and AQuA datasets for arithmetic reasoning tasks have been acquired, as used in Section 3.2.\nRequirement: Code for acquiring the AQuA datasets for arithmetic reasoning (https://huggingface.co/datasets/nguyen-brat/aqua) from its official source or equivalent mirrors has been implemented and can be used"
+    },
+    "q25": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the Guanaco65B model.\nRequirement: Classifier-Free Guidance (CFG) inference is implemented as described in equation 7 in Section 2.2 such that it can be run on the Guanaco65B model."
+    },
+    "q26": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the Guanaco65B model.\nRequirement: The implementation of CFG which can be used for the Guanaco65B model includes a mutable (not hardcoded) hyper-parameter which can be used to specify the guidance strength"
+    },
+    "q27": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the Guanaco65B model.\nRequirement: As outlined in Section 3.1, the implementation of CFG which can be used for the Guanaco65B model starts the unconditional prompt $\\log p_{\\theta}(w_i | w_{j < i})$ with the last token of the initial prompt."
+    },
+    "q28": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the WizardLM-30B model.\nRequirement: Classifier-Free Guidance (CFG) inference is implemented as described in equation 7 in Section 2.2 such that it can be run on the WizardLM-30B model."
+    },
+    "q29": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the WizardLM-30B model.\nRequirement: The implementation of CFG which can be used for the WizardLM-30B model includes a mutable (not hardcoded) hyper-parameter which can be used to specify the guidance strength"
+    },
+    "q30": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Classifier-Free Guidance inference is implemented as described in Equation 7 in Section 2.2 and in Section 3.1 such that it can be run on the WizardLM-30B model.\nRequirement: As outlined in Section 3.1, the implementation of CFG which can be used for the WizardLM-30B model starts the unconditional prompt $\\log p_{\\theta}(w_i | w_{j < i})$ with the last token of the initial prompt."
+    },
+    "q31": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Guanaco65B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: Code has been implemented such that when evaluated, Guanaco65B is prompted with the few-shot prompt for GSM8k from Wang et al. 2023: Self-Consistency Improves Chain of Thought Reasoning in Language Models"
+    },
+    "q32": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Guanaco65B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: Code has been implemented such that when Guanaco65B is evaluated on GSM8k, the initial prompt is $w_p$, such that only $w_p$ is up-weighted and not $w_{cot}$ and the model's answer $w_{a}$, as described at the end of Section 3.2."
+    },
+    "q33": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Guanaco65B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: Code has been implemented such that Guanaco65B can be evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2]  (as per Figure 2)"
+    },
+    "q34": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: Guanaco65B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: The evaluation setup has been reproduced, either by directly using the Language Model Evaluation Harness (Gao et al., 2021, github.com/EleutherAI/lm-evaluation-harness) or by reproducing the harness' setup."
+    },
+    "q35": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: Guanaco65B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: The evaluation of Guanaco65B on GSM8k with Wang et al. 2023 few-shot prompting has been correctly executed for guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] as outlined in section 3.2"
+    },
+    "q36": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: Guanaco65B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: The evaluation of Guanaco65B on GSM8k, the metric '% of chains ending in a invalid answer' has been correctly measured all guidance strengths."
+    },
+    "q37": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass only if the code was actually run (see reproduce.sh, reproduce.log and output files) and that execution carried out the requirement.\n\nParent requirement: Guanaco65B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: The evaluation of Guanaco65B on GSM8k, the metric 'final answer accuracy' has been correctly measured all guidance strengths."
+    },
+    "q38": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: WizardLM-30B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: Code has been implemented such that when evaluated, WizardLM-30B is prompted with the few-shot prompt for GSM8k from Wang et al. 2023: Self-Consistency Improves Chain of Thought Reasoning in Language Models"
+    },
+    "q39": {
+      "type": "noul",
+      "instructions": "The state is a code submission attempting to reproduce a research paper: its source files, plus reproduce.log from running reproduce.sh, plus any output files. Grade one rubric requirement.\nPass if the submission's code contains a correct implementation of the requirement. It does not need to have been run.\n\nParent requirement: WizardLM-30B has been evaluated on GSM8k with guidance strengths [1, 1.1, 1.25, 1.5, 1.75, 2] (as per Figure 2) using Wang et al. 2023 self-consistency Chain-of-Thought -- performance metrics have been noted.\nRequirement: Code has been implemented such that when WizardLM-30B is evaluated on GSM8k, the initial prompt is $w_p$, such that only $w_p$ is up-weighted and not $w_{cot}$ and the model's answer $w_{a}$, as described at the end of Section 3.2."
+    }
+  }
+}

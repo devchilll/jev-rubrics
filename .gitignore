@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.DS_Store
+.env
+
+# Raw data: re-fetch with download_data.sh (submissions are up to 212 MB)
+data/*.parquet
+data/judge_eval/*/0/submission/
+data/judge_eval/*/0/submission.tar

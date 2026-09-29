@@ -1,0 +1,201 @@
+q_id,article_id,item_idx,rubric_item,p_met,model,latency_s
+1095455aa4dd56b1,zl0HLZOJC9,0,The proposed solution integrates a workload control mechanism as a constrained optimization problem within the E-step of the EM algorithm.,0.98,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,1,The constrained optimization is formulated to ensure that the workload distribution among human experts and the AI classifier is within specified lower and upper bounds.,0.96,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,2,The solution leverages the duality of the constrained optimization problem to solve it efficiently.,0.96,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,3,The proposed mechanism is capable of handling different numbers of human experts and varying coverage values.,0.87,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,4,The workload control mechanism is integrated seamlessly into the EM algorithm without compromising computational efficiency.,0.8,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,5,The solution avoids the need for multiple attempts to fine-tune hyperparameters associated with workload distribution.,0.83,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,6,"The proposed method is consistent with the L2D training procedure, ensuring that the training and testing phases are aligned.",0.85,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,7,"The mechanism does not require access to all test samples before making predictions, making it suitable for model deployment.",0.93,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,8,The solution facilitates the analysis of the trade-off between the reliability of human experts and the efficiency of the AI classifier through the coverage-accuracy curve.,0.89,jev-1.13.0,0.2
+1095455aa4dd56b1,zl0HLZOJC9,9,The solution does not rely on post-hoc methods for adjusting workload distribution during testing.,0.9,jev-1.13.0,0.2
+012a8aabae211a68,zCxGCdzreM,0,"The plan involves the application of a UED algorithm, such as SFL, to select tasks based on their learnability.",0.99,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,1,The research plan includes a method for generating or sampling a diverse set of 2D physics-based tasks.,0.99,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,2,The proposal discusses strategies for assessing the learnability of tasks and selecting those that are most beneficial for training.,0.95,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,3,The research plan outlines a clear evaluation protocol to assess the agent's zero-shot performance on unseen tasks.,0.92,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,4,The plan includes a strategy for fine-tuning the general agent on specific tasks to improve its performance.,0.97,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,5,The proposal discusses potential challenges in applying UED algorithms to a diverse set of 2D physics tasks and how to address them.,0.53,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,6,The research plan considers the balance between exploration and exploitation in task selection.,0.51,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,7,The plan includes a method for monitoring and adjusting the task distribution during training to maintain the agent's learning progress.,0.93,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,8,The proposal outlines a clear comparison between the performance of the UED-trained agent and a baseline agent trained without UED.,0.64,jev-1.13.0,0.14
+012a8aabae211a68,zCxGCdzreM,9,The plan includes an evaluation of the robustness of the UED algorithm to changes in the task distribution or environment dynamics.,0.89,jev-1.13.0,0.14
+5d7c3ccb012e6b3a,z5uVAKwmjf,0,"The solution proposes the introduction of ""operators"" as reusable combinations of nodes representing common agentic operations.",0.99,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,1,These operators are designed to encapsulate frequently used workflow patterns or structures.,0.96,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,2,The operators are integrated into the search space to enhance the exploration process.,0.94,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,3,The operators are designed to be flexible and adaptable to different task requirements.,0.94,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,4,The solution includes a clear definition of how these operators are represented within the code-based workflow structure.,0.45,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,5,The framework incorporates a mechanism to utilize these operators during the workflow generation process.,0.87,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,6,The introduction of operators does not significantly increase the complexity of the search space.,0.58,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,7,The solution discusses potential strategies for identifying and defining these operators based on existing literature or empirical evidence.,0.78,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,8,The introduction of operators is supported by a clear rationale based on the characteristics of agentic workflows.,0.7,jev-1.13.0,0.13
+5d7c3ccb012e6b3a,z5uVAKwmjf,9,The solution considers the potential limitations or drawbacks of relying on predefined operators and addresses how to mitigate them.,0.55,jev-1.13.0,0.13
+8d52876ae89c2f5a,xoIeVdFO7U,0,The analysis identifies the actual METRA representation objective and its connection to a contrastive loss.,0.89,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,1,The response explains how the METRA representation objective is related to maximizing a lower bound on mutual information.,0.8,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,2,The response shows that the METRA representation objective is equivalent to a contrastive loss.,0.73,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,3,The analysis highlights the connection between METRA and contrastive learning.,0.97,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,4,The response discusses the implications of reinterpreting METRA's success within the MISL framework.,0.63,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,5,The analysis is based on the mathematical formulation of METRA's representation objective.,0.91,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,6,The response demonstrates an understanding of the mathematical concepts underlying METRA and contrastive learning.,0.78,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,7,The analysis is thorough and addresses the key aspects of METRA's representation objective.,0.84,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,8,The response is well-organized and easy to follow.,0.95,jev-1.13.0,0.27
+8d52876ae89c2f5a,xoIeVdFO7U,9,The analysis provides a clear and compelling argument for reinterpreting METRA's success within the MISL framework.,0.55,jev-1.13.0,0.27
+bd64387b4a7008a6,xXTkbTBmqq,0,The proposed method defines domain specialization as the proportion of tokens from a particular domain that get routed to a specific expert.,0.99,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,1,The proposed method defines vocabulary specialization as the proportion of tokens with a specific token ID that are routed to a particular expert.,0.99,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,2,"The method involves comparing the domain specialization of OLMOE-1B-7B with another MoE model (e.g., Mixtral-8x7B).",0.97,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,3,The method involves visualizing the domain specialization of experts across different layers.,0.2,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,4,"The analysis considers multiple domains, including arXiv, GitHub, and C4.",0.97,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,5,"The method involves quantifying the extent of domain specialization using a metric (e.g., proportion of tokens).",0.99,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,6,The proposed method links domain specialization to vocabulary specialization.,0.89,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,7,The method does not assume that experts are equally activated across all domains.,0.97,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,8,"The analysis considers the routing decisions for input tokens, rather than just the final output.",0.98,jev-1.13.0,0.16
+bd64387b4a7008a6,xXTkbTBmqq,9,The proposed method is applicable to other MoE models beyond OLMOE-1B-7B.,0.91,jev-1.13.0,0.16
+d77bc8f82e7de754,xDrFWUmCne,0,"The proposed approach relaxes the traditional ""hard"" teacher forcing objective to a ""soft"" version that allows discrepancies in the initial condition between the teacher and student solvers.",0.97,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,1,"The ""soft"" teacher forcing criterion is achieved by introducing a radius $r$ around the input $x_T$, within which the student model is allowed to find an alternative input $x'_T$ that maps to the teacher's output.",0.98,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,2,"The ""soft"" objective is formulated as an optimization problem that minimizes the distance between the student's output given $x'_T$ and the teacher's output given $x_T$, subject to the constraint that $x'_T$ is within the $r$-ball of $x_T$.",0.98,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,3,"The proposed approach provides a theoretical guarantee on the KL divergence between the teacher and student distributions, as stated in Theorem 1.",0.93,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,4,The proposed approach is applicable to various ODE solvers and does not require retraining the pre-trained DPM.,0.65,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,5,The method is efficient and can be trained with a small set of random samples from a tractable noise distribution.,0.94,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,6,"The approach is designed to work with a limited number of learnable parameters (i.e., $\xi$) in the student model.",0.66,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,7,The approach is robust to different choices of $r$ and can be adapted to different NFE settings.,0.41,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,8,The theoretical analysis provides insight into the factors that influence the performance of the student model.,0.88,jev-1.13.0,0.12
+d77bc8f82e7de754,xDrFWUmCne,9,The proposed approach is a lightweight framework that can be easily integrated into existing DPM sampling pipelines.,0.87,jev-1.13.0,0.12
+efbc144668ad2c7d,wg1PCg3CUP,0,The research plan clearly articulates the goal of optimizing precision during pretraining to minimize loss subject to a compute constraint.,0.98,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,1,"The plan involves analyzing the relationships between model size, data budget, and precision in determining compute-optimality.",0.98,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,2,"The research plan considers the scenario where model size and data are optimized jointly, and the scenario where model size is constrained.",0.98,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,3,The plan includes a clear description of the optimization problem and the constraints involved.,0.96,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,4,The research plan derives or proposes a functional form that relates precision to compute budget and model size.,0.94,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,5,The plan discusses the implications of the findings for the de facto practice of training models in 16-bit precision.,0.95,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,6,The research plan considers the potential trade-offs between precision and model size in achieving compute-optimality.,0.96,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,7,The plan includes a discussion of the potential risks and challenges associated with training models at very low precisions.,0.91,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,8,The proposed research plan includes a clear methodology for testing the predictions and validating the findings.,0.93,jev-1.13.0,0.15
+efbc144668ad2c7d,wg1PCg3CUP,9,The research plan acknowledges the limitations and potential biases of the proposed optimization strategy.,0.74,jev-1.13.0,0.15
+ae76d1ca49784d68,weM4YBicIP,0,The solution proposes an audio-to-latents module that transforms audio and facial motion-related features into a shared latent space.,0.99,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,1,The module uses strongly correlated conditions like head movement variance and expression variance during training.,0.98,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,2,The audio-to-latents module is designed to work alongside weakly correlated audio features.,0.91,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,3,The obtained motion latents are used to influence the denoising network's output.,0.97,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,4,The solution explains how the audio-to-latents module enhances the audio-portrait motion correlation.,0.92,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,5,"During testing, the module generates motion latents solely from audio features.",0.98,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,6,The proposed method is integrated into an end-to-end diffusion model framework.,0.96,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,7,The solution includes a plan for evaluating the module's effectiveness on diverse input types and scenarios.,0.96,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,8,The audio-to-latents module is designed to improve the subtlety of facial expressions in generated videos.,0.95,jev-1.13.0,0.11
+ae76d1ca49784d68,weM4YBicIP,9,The solution demonstrates an understanding of the importance of leveraging strongly correlated conditions during training.,0.95,jev-1.13.0,0.11
+d049a96abfb3b111,wM2sfVgMDH,0,The redefined task should collectively consider the status of key participants in the driving scenario.,0.97,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,1,The approach must jointly model motion prediction and closed-loop planning tasks as a future trajectory generation task.,0.98,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,2,The redefined task should enable the modeling of cooperative behaviors among vehicles.,0.74,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,3,The proposed method should parameterize the model to generate future trajectories for all key participants simultaneously.,0.98,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,4,The approach should utilize the expressive power of diffusion models to capture complex distributions.,0.97,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,5,The redefined task should enhance the model's ability to handle complex interaction scenarios.,0.93,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,6,The proposed method should simplify the framework by avoiding the need for separate modules or additional loss designs.,0.92,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,7,The proposed method should provide a clear mechanism for integrating the status of neighboring vehicles into the planning process.,0.94,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,8,The approach should be able to handle varying numbers of neighboring vehicles.,0.75,jev-1.13.0,0.13
+d049a96abfb3b111,wM2sfVgMDH,9,The redefined task should support adaptable planning behaviors based on the interactions between vehicles.,0.94,jev-1.13.0,0.13
+3528b00a50995abe,vzItLaEoDa,0,The proposed method should generate affordance maps as a spatial prior to guide the agent's exploration towards task-relevant areas.,0.98,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,1,"The affordance map generation should utilize task-specific guidance, such as textual task definitions, to identify relevant regions in the visual observation.",0.97,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,2,The approach should involve simulating virtual exploration through image zoom-in to calculate task-correlation scores.,0.97,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,3,The affordance map generation process should be computationally efficient to support real-time applications.,0.95,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,4,The multimodal U-Net architecture should effectively fuse image and text features to produce accurate affordance maps.,0.93,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,5,The affordance maps should highlight regions of high exploration potential in the visual observation.,0.97,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,6,"The affordance map generation should not rely on real successful trajectories, instead using simulated exploration.",0.91,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,7,The method should be adaptable to different tasks within the open-world environment.,0.79,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,8,The evaluation should include analyses on the quality and effectiveness of the generated affordance maps.,0.28,jev-1.13.0,0.15
+3528b00a50995abe,vzItLaEoDa,9,The approach should be designed to work with raw pixel observations and sparse rewards.,0.88,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,0,The proposed pre-training pipeline must be capable of handling heterogeneous data sources with varying properties.,0.97,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,1,The pipeline should decouple the embedding space from the transformer body to optimize embeddings for specific data sources.,0.98,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,2,The solution must include at least three variants of the pre-training pipeline with different levels of decoupling.,0.99,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,3,The pipeline should be designed to reduce memory costs associated with token embedding matrices.,0.96,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,4,The solution should enable the use of custom vocabularies per data source.,0.98,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,5,The pipeline should improve model generalization across different data sources.,0.94,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,6,The proposed solution must be scalable to large-scale language models.,0.91,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,7,The pipeline should allow for vocabulary-agnostic training.,0.89,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,8,The solution should include a method for constructing a global embedding matrix post-pre-training.,0.92,jev-1.13.0,0.15
+b5fdb2fff1d70ee4,vf5aUZT0Fz,9,The solution should provide a clear mechanism for aggregating contributions from different data sources during pre-training.,0.94,jev-1.13.0,0.15
+be6caa9c83e5188b,vaEPihQsAA,0,The proposed scoring mechanism should quantify the clarity of hand regions in the training video frames.,0.98,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,1,The score should be calculated based on the detail richness and edge sharpness of the hand images.,0.89,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,2,The scoring mechanism should involve cropping the pixel areas of the hands based on keypoints.,0.98,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,3,The Laplacian operator should be used to calculate the Laplacian standard deviation of the hand images.,0.99,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,4,The hand clarity score should be used as a conditional input to the denoising U-Net.,0.98,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,5,"During inference, a high clarity score should be input to enhance the generation results for the hands.",0.97,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,6,The proposed scoring mechanism should be evaluated for its impact on hand quality metrics.,0.95,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,7,The hand clarity score should help the model distinguish between high-quality and low-quality hand images.,0.93,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,8,The score should be designed to be robust to variations in hand image quality across different video frames.,0.83,jev-1.13.0,0.12
+be6caa9c83e5188b,vaEPihQsAA,9,The proposed mechanism should be validated across different hand movement scenarios.,0.34,jev-1.13.0,0.12
+71330f8be3778516,v593OaNePQ,0,The proposed method addresses the discontinuity issue in the loss function.,0.89,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,1,The method involves using a stochastic tree expansion policy.,0.98,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,2,The tree expansion is formulated as a decision-making task.,0.89,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,3,The method optimizes the expected loss using a REINFORCE-style objective.,0.97,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,4,The approach ensures the continuity of the loss function in the parameter space.,0.8,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,5,The method is designed to work with gradient-based optimization techniques.,0.97,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,6,The approach is robust against changes in the search tree structure during training.,0.69,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,7,The proposed method is integrated into the neural network architecture.,0.93,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,8,The approach does not require a fixed search tree structure.,0.88,jev-1.13.0,0.15
+71330f8be3778516,v593OaNePQ,9,The approach is scalable to complex problems with deeper search trees.,0.39,jev-1.13.0,0.15
+83a9d9a2822bf8d0,rwqShzb9li,0,The research plan involves using the fitted regression coefficients as steering vectors.,0.99,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,1,The plan includes adding these steering vectors to the activations of the identified attention heads during text generation.,0.99,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,2,The plan involves controlling the magnitude and direction of the intervention using a parameter (α).,0.99,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,3,The research plan includes generating text on various policy issues with different values of α.,0.99,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,4,The plan involves evaluating the political slant of the generated text using human annotators or another LLM.,0.99,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,5,The plan includes analyzing the correlation between α and the measured political slant.,0.99,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,6,The research plan involves testing the intervention on different policy issues to assess generalizability.,0.98,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,7,The plan considers the effect of intervening on different numbers of attention heads.,0.99,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,8,The research plan includes robustness checks to ensure the intervention's effectiveness on unseen data or events.,0.98,jev-1.13.0,0.12
+83a9d9a2822bf8d0,rwqShzb9li,9,The research plan accounts for analyzing the length and coherence of generated text under different interventions.,0.98,jev-1.13.0,0.12
+914765a3dcdf2f47,rFpZnn11gj,0,The method involves extracting high-quality image patches from the WSIs.,0.99,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,1,A large multimodal model (LMM) is trained to generate captions for the extracted image patches.,0.6,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,2,The dataset is designed to train and enhance pathology-specific vision-language models.,0.98,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,3,The method overcomes the limitations of previous datasets in terms of scale and quality.,0.88,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,4,The approach is evaluated through various downstream pathology tasks.,0.95,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,5,The generated dataset significantly improves the performance of models like CLIP.,0.83,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,6,The method is scalable and can be expanded by incorporating additional WSIs.,0.95,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,7,The captions in the dataset are analyzed for word count and word frequency distribution.,0.06,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,8,The image quality of the dataset is superior to previous datasets.,0.48,jev-1.13.0,0.13
+914765a3dcdf2f47,rFpZnn11gj,9,The approach demonstrates a promising potential as a pretraining strategy for pathology models.,0.86,jev-1.13.0,0.13
+5aa57afa3daf505c,pQqeQpMkE7,0,The solution must involve distributing the 3DGS parameters across multiple GPUs to alleviate memory constraints.,0.98,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,1,The approach should exploit the mixed parallelism inherent in the 3DGS training process.,0.97,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,2,The solution must address the challenge of dynamic and unbalanced workloads across different image regions.,0.96,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,3,The distribution strategy should consider both Gaussian-wise and pixel-wise distribution for different steps of the 3DGS training process.,0.98,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,4,The approach should incorporate sparse all-to-all communication to transfer necessary Gaussians to pixel partitions efficiently.,0.98,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,5,The solution must include a mechanism for dynamic load balancing to account for changes in Gaussian densities during training.,0.93,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,6,The approach should be applicable to various scene sizes and resolutions.,0.85,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,7,The distribution strategy should minimize redundant computations across GPUs.,0.78,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,8,The solution should provide a way to measure and compare its performance against existing 3DGS systems.,0.67,jev-1.13.0,0.12
+5aa57afa3daf505c,pQqeQpMkE7,9,The strategy should be implementable using existing GPU clusters and interconnect technologies.,0.95,jev-1.13.0,0.12
+a54e88e1170ef241,odjMSBSWRt,0,The proposed taxonomy includes dark patterns specifically relevant to LLM interactions.,0.95,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,1,The taxonomy is based on a systematic analysis of existing literature on dark patterns and AI ethics.,0.87,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,2,The significance of each dark pattern is explained in terms of its potential impact on user autonomy.,0.79,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,3,The taxonomy is designed to be comprehensive and adaptable to evolving LLM capabilities.,0.82,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,4,The impact of dark patterns on user trust in LLMs is considered.,0.96,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,5,The taxonomy is informed by an understanding of the psychological and social factors influencing human-AI interaction.,0.33,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,6,The proposal includes examples or case studies to illustrate the manifestation of these dark patterns in LLMs.,0.32,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,7,The taxonomy is designed to guide the development of more transparent and user-autonomy-respecting LLMs.,0.91,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,8,The methodology for identifying and categorizing dark patterns is clearly described.,0.83,jev-1.13.0,0.14
+a54e88e1170ef241,odjMSBSWRt,9,The proposal discusses strategies for mitigating the identified dark patterns in LLM development.,0.93,jev-1.13.0,0.14
+01afb546b1a62a2d,o9kqa5K3tB,0,The response clearly states the criteria for constructing the benchmark dataset.,0.98,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,1,The dataset includes PDEs with significant high-frequency Fourier modes.,0.98,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,2,The response explains why high-frequency Fourier modes are important for testing MemNO.,0.95,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,3,The response discusses how the dataset is designed to test the effects of memory in neural operators.,0.97,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,4,The performance evaluation includes comparing MemNO with Markovian baselines.,0.99,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,5,The response explains how the performance of MemNO and other baselines will be measured.,0.96,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,6,The evaluation includes testing on low-resolution or noisy input data.,0.98,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,7,The dataset construction is well-motivated by the theoretical analysis and the characteristics of the PDEs.,0.93,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,8,The evaluation is designed to test the benefits of memory in neural operators.,0.97,jev-1.13.0,0.12
+01afb546b1a62a2d,o9kqa5K3tB,9,The evaluation plan is comprehensive and includes multiple PDE families and scenarios.,0.95,jev-1.13.0,0.12
+5ad702192aae9e7c,o5TsWTUSeF,0,The proposed architectural modification to the connector should be based on the Mixture of Experts (MoE) architecture.,0.99,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,1,The MoE architecture should be designed to leverage diverse prior knowledge through different experts.,0.97,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,2,"The solution should integrate multiple alignment tasks (chart-table, chart-JSON, chart-code) for expert initialization.",0.98,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,3,The model should maintain its performance on general tasks while enhancing chart comprehension.,0.91,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,4,The solution should not rely on random initialization or co-upcycling of expert parameters.,0.94,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,5,The MoE architecture should allow for the activation of a subset of experts through a gating network.,0.98,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,6,The model should be trained using a combination of alignment pre-training and supervised fine-tuning.,0.94,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,7,The alignment pre-training should involve updating only the connector parameters while keeping the vision encoder and LLM frozen.,0.98,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,8,The supervised fine-tuning stage should include high-quality knowledge learning and chart-specific annealing tuning.,0.94,jev-1.13.0,0.15
+5ad702192aae9e7c,o5TsWTUSeF,9,The solution should be evaluated on benchmark datasets such as ChartQA and ChartBench.,0.95,jev-1.13.0,0.15
+4b1cf06dbe61dec8,o2Igqm95SJ,0,The experiment involves a three-dimensional NCA.,0.99,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,1,The NCA must encode the MNIST image into a compressed form.,0.93,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,2,The NCA must decode the information to reconstruct the original digit.,0.98,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,3,The experiment demonstrates the NCA's ability to perform complex information processing.,0.89,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,4,"The NCA uses simple, uniform rules for encoding and decoding.",0.92,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,5,The experiment showcases the power of NCAs in learning complex tasks.,0.9,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,6,The NCA is trained to achieve the desired outcome.,0.95,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,7,The experiment is designed to test the NCA's capabilities.,0.97,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,8,The results demonstrate the NCA's ability to encode and decode complex visual information.,0.73,jev-1.13.0,0.47
+4b1cf06dbe61dec8,o2Igqm95SJ,9,The experiment is a novel application of NCA capabilities.,0.75,jev-1.13.0,0.47
