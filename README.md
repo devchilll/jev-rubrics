@@ -23,6 +23,7 @@ paper-reproduction tasks, and possibly as reward models in RL.
 | `results/jev_raw_*.jsonl` | Raw Jev API responses |
 | `results/sent_to_jev/` | The exact state text and first request sent to Jev per submission |
 | `results/jev_items_ml_test_n20.csv` | ResearchPlanGen probe output |
+| `examples/` | One full JudgeEval example (CFG paper, rubric, submission, human grades), walked through in the PaperBench report |
 
 The submissions (up to 212 MB each) and the ResearchPlanGen parquet files are not committed. Run `download_data.sh`.
 

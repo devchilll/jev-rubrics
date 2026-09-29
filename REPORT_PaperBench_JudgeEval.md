@@ -39,6 +39,83 @@ The ResearchPlanGen (Meta) probe is a separate report: [REPORT_ResearchPlanGen.m
 | `all-in-one` | authors' repo (Simformer), never run | 174 | 84 / 90 | ~440k tokens | ❌ too large |
 | `pinn` | authors' repo + added `reproduce.sh`, run | 1,963 | 882 / 1,081 | ~1.6M tokens | ❌ too large |
 
+## Worked example: one JudgeEval item, end to end
+This walks through **`stay-on-topic-with-classifier-free-guidance`**, one of the 5 human-graded examples and one of
+the 2 we sent to Jev. Everything below is committed under [examples/](examples/). Each piece links to both our copy
+and the original in OpenAI's PaperBench repo.
+
+### The paper being reproduced
+**Stay on Topic with Classifier-Free Guidance** (Sanchez, Fan, Spangher, Levi, Ammanamanchi, Biderman; ICML 2024;
+[arXiv:2306.17806](https://arxiv.org/abs/2306.17806)).
+
+What it claims, per its abstract: *Classifier-Free Guidance (CFG)*, a trick from text-to-image diffusion, also works for
+plain language models at inference time. It up-weights the model's prediction *given the prompt* against its
+prediction *without the prompt*, with strength γ. The paper reports that this improves GPT-2, Pythia and LLaMA models
+across Q&A, reasoning and code benchmarks (e.g. LLaMA-7B beats PaLM-540B on LAMBADA), and that the gain is roughly
+equivalent to doubling model size.
+
+### The pieces and where to find them
+| Piece | What it is | This repo | Original (openai/frontier-evals) |
+|---|---|---|---|
+| **Paper** | The paper to reproduce, as Markdown (what judges read) and PDF | [paper.md](examples/stay-on-topic-paper/paper.md) · [paper.pdf](examples/stay-on-topic-paper/paper.pdf) | [paper.md](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/papers/stay-on-topic-with-classifier-free-guidance/paper.md) · [paper.pdf](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/papers/stay-on-topic-with-classifier-free-guidance/paper.pdf) |
+| **Addendum** | Clarifications given to the reproducer (typos in the paper, default settings) | [addendum.md](examples/stay-on-topic-paper/addendum.md) | [addendum.md](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/papers/stay-on-topic-with-classifier-free-guidance/addendum.md) |
+| **Judge addendum** | Extra notes given only to the judge (e.g. reference FLOPs code) | [judge.addendum.md](examples/stay-on-topic-paper/judge.addendum.md) | [judge.addendum.md](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/papers/stay-on-topic-with-classifier-free-guidance/judge.addendum.md) |
+| **Blacklist** | URLs the reproducer may not use (the authors' own code) | [blacklist.txt](examples/stay-on-topic-paper/blacklist.txt) | [blacklist.txt](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/papers/stay-on-topic-with-classifier-free-guidance/blacklist.txt) |
+| **Rubric** (ungraded) | The official rubric tree, written with the paper's authors | [rubric.json](examples/stay-on-topic-paper/rubric.json) | [rubric.json](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/papers/stay-on-topic-with-classifier-free-guidance/rubric.json) |
+| **Submission** | The reproduction attempt being graded: code, run script, terminal output, result files | [stay-on-topic-submission/](examples/stay-on-topic-submission/) | [submission.tar](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/judge_eval/stay-on-topic-with-classifier-free-guidance/0/submission.tar) |
+| **Ground truth** | The same rubric tree with a **human** pass/fail `score` (and sometimes an `explanation`) on every leaf | [stay-on-topic-human-grades.json](examples/stay-on-topic-human-grades.json) | [expected_result.json](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/judge_eval/stay-on-topic-with-classifier-free-guidance/0/grading/expected_result.json) |
+| **What we sent to Jev** | The submission's text files concatenated into one `state`, plus the first 40 questions | [state.txt](results/sent_to_jev/stay-on-topic-with-classifier-free-guidance_state.txt) · [request1.json](results/sent_to_jev/stay-on-topic-with-classifier-free-guidance_request1.json) | (ours) |
+| **Jev's answers** | One row per rubric leaf: human label next to Jev's P(pass) | [jev_items_judgeeval.csv](results/jev_items_judgeeval.csv) (rows with `paper` = this example) | (ours) |
+
+The JudgeEval graded rubric can differ slightly from the official `rubric.json`, because OpenAI polished the rubrics
+after running JudgeEval
+([JudgeEval README](https://github.com/openai/frontier-evals/blob/main/project/paperbench/paperbench/judge/judge_eval/README.md)).
+
+### Key facts that are easy to mix up
+- **Models in the paper's experiments** are the *subjects* of the research, not the thing doing the reproduction.
+  For Section 3.1 these are GPT-2 (4 sizes), Pythia (160M–12B) and LLaMA (7B–65B). Later sections use Guanaco-65B,
+  WizardLM-30B, CodeGen and Falcon-7B.
+- **Who produced the submission:** the PaperBench team. The PaperBench paper says JudgeEval replications were
+  "created either from scratch or by modifying the original author's codebases". This one is a from-scratch
+  **partial** reproduction. The paper does not say whether a human or an agent wrote it.
+- **What the submission actually ran:** only Section 3.1, and only the `--short` setting: GPT-2 small and medium,
+  Pythia-160M and 410M, 6 of the 9 benchmarks, each with γ = 1 (no CFG) and γ = 1.5 (CFG). The Section 3.2 script
+  exists but is commented out in `reproduce.sh`.
+- **What the submission contains:**
+  - code: [cfg.py](examples/stay-on-topic-submission/cfg.py) (the method), [harness.py](examples/stay-on-topic-submission/harness.py) (plugs it into EleutherAI's eval harness), [run_3.1.py](examples/stay-on-topic-submission/run_3.1.py), [run_3.2.py](examples/stay-on-topic-submission/run_3.2.py) (the experiments);
+  - the run script [reproduce.sh](examples/stay-on-topic-submission/reproduce.sh) and its terminal output [reproduce.log](examples/stay-on-topic-submission/reproduce.log);
+  - result files [results/table5/*.csv](examples/stay-on-topic-submission/results/table5/): accuracy per model at γ = 1 and γ = 1.5.
+- **It is a final repo state, not a trajectory.** There are no agent actions or step-by-step history, only what was left behind after `reproduce.sh` ran.
+- **The rubric** is a tree of 155 nodes, of which 116 are gradable leaves. Parent scores are weighted averages of their children.
+  The human grades roll up to **0.48** overall:
+  ```
+  [0.48] Reproduce the paper
+   ├─ [0.90 w=4] Sec 3.1  CFG boosts zero-shot benchmarks          (mostly done)
+   ├─ [0.58 w=4] Sec 3.2  CFG + chain-of-thought on GSM8K/AQuA     (code written, not run)
+   ├─ [0.25 w=4] Sec 3.3  CFG on HumanEval code generation         (mostly not done)
+   ├─ [0.00 w=1] Sec 4    FLOPs analysis                           (not done)
+   ├─ [0.29 w=1] Sec 5    entropy / instruction-tuning analysis    (mostly not done)
+   └─ [0.00 w=1] Sec 6    Table 4 toxicity / sentiment             (not done)
+  ```
+
+### Three different kinds of "score"
+| Layer | What is being scored | Example number |
+|---|---|---|
+| ① The paper's experiment metric | How accurate GPT-2 is on a benchmark, with and without CFG | ARC-e accuracy 0.491 → 0.515 (in the result CSVs) |
+| ② The rubric score | How completely and correctly the submission reproduced the paper | Human-graded 0.48 for this submission |
+| ③ The judge metric (this project) | How well a judge's rubric grades agree with the human grades | Jev macro-F1 0.832, AUROC 0.961 |
+
+The rubric judges the **whole submission folder**, using the paper as the reference. Each leaf looks only at the files
+relevant to it: source code for Code Development, `reproduce.log` and outputs for Code Execution, and result files
+compared with the paper's claims for Result Analysis.
+
+### Three rubric leaves traced through the files
+| Rubric leaf (category) | What the paper says | Evidence in the submission | Human | Jev P(pass) |
+|---|---|---|---|---|
+| "CFG inference is implemented as described in equation 7 … for the GPT2 family" (Code Development) | Eq. 7: log P = log P(uncond) + γ·(log P(cond) − log P(uncond)), [paper.md L106](https://github.com/devchilll/jev-rubrics/blob/main/examples/stay-on-topic-paper/paper.md?plain=1#L106) | [cfg.py L89](examples/stay-on-topic-submission/cfg.py#L89): `adjusted_logits = uncond_log_probs + guidance_scale * (cond_log_probs - uncond_log_probs)` | ✅ pass | 0.88 ✅ |
+| "The zero-shot benchmark … has been run on the GPT2 model family with and without CFG (γ=1 and γ=1.5)" (Code Execution) | Evaluate the GPT-2 family, [paper.md L121](https://github.com/devchilll/jev-rubrics/blob/main/examples/stay-on-topic-paper/paper.md?plain=1#L121). Table 5 lists 4 sizes (G-s, G-m, G-l, G-xl), [paper.md L675–678](https://github.com/devchilll/jev-rubrics/blob/main/examples/stay-on-topic-paper/paper.md?plain=1#L675-L678) | Only `--short` was run, [reproduce.sh L20](examples/stay-on-topic-submission/reproduce.sh#L20). `MODELS_SHORT` holds only gpt2 and gpt2-medium, [run_3.1.py L13](examples/stay-on-topic-submission/run_3.1.py#L13), and the log confirms it, [reproduce.log L14](examples/stay-on-topic-submission/reproduce.log#L14) | ❌ fail ("only been run on gpt2 small and gpt medium") | 0.94 ❌ (Jev wrong: it never saw the paper, so it couldn't know the family has 4 sizes) |
+| "The measured performance metrics … show that using CFG (γ=1.5) outperforms not using CFG (γ=1)" (Result Analysis) | Table 5: e.g. ARC-e, GPT-2 medium 43.6 → 47.6, [paper.md L676](https://github.com/devchilll/jev-rubrics/blob/main/examples/stay-on-topic-paper/paper.md?plain=1#L676) | [arc_easy_results.csv](examples/stay-on-topic-submission/results/table5/arc_easy_results.csv): gpt2-medium 0.491 → 0.515, also in [reproduce.log L130](examples/stay-on-topic-submission/reproduce.log#L130). The numbers differ from the paper, but the direction matches | ✅ pass | 0.59 ✅ (barely) |
+
 ## Method
 - **Subset:** only the 2 submissions whose text fits Jev's ~32k-token input (195 leaves, 7% of JudgeEval).
 - **Input to Jev:**

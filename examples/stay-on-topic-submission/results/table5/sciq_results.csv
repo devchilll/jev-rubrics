@@ -1,0 +1,5 @@
+Model,1.0,1.5
+EleutherAI/pythia-160m,0.754,0.793
+EleutherAI/pythia-410m,0.815,0.843
+gpt2,0.752,0.782
+gpt2-medium,0.774,0.811

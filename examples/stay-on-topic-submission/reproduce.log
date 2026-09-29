@@ -1,0 +1,163 @@
++ export DEBIAN_FRONTEND=noninteractive
+
++ apt-get update
+[ TRUNCATED ]
++ apt-get install -y curl
+[ TRUNCATED]
++ curl -LsSf https://astral.sh/uv/install.sh | sh
+[ TRUNCATED ]
++ source /root/.local/bin/env
+
++ uv sync
+[ TRUNCATED ]
++ uv run python run_3.1.py --short
+EVALUATING MODEL:gpt2-medium WITH GUIDANCE SCALE:1.5
+2024-12-03:15:02:18,744 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:15:02:18,744 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:15:02:29,369 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:15:02:29,369 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:15:02:38,067 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:15:02:38,067 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:15:02:38,372 INFO     [evaluator.py:496] Running loglikelihood requests
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [44:43<00:00, 12.08it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 32.05it/s]
+fatal: not a git repository (or any of the parent directories): .git
+EVALUATING MODEL:gpt2 WITH GUIDANCE SCALE:1.5
+2024-12-03:15:47:36,050 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:15:47:36,051 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:15:47:45,596 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:15:47:45,596 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:15:47:52,738 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:15:47:52,738 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:15:47:53,189 INFO     [evaluator.py:496] Running loglikelihood requests
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [22:20<00:00, 24.18it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 30.92it/s]
+fatal: not a git repository (or any of the parent directories): .git
+EVALUATING MODEL:EleutherAI/pythia-410m WITH GUIDANCE SCALE:1.5
+2024-12-03:16:10:27,366 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:16:10:27,367 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:16:10:37,001 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:16:10:37,001 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:16:10:44,793 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:16:10:44,793 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:16:10:45,404 INFO     [evaluator.py:496] Running loglikelihood requests
+  0%|                                                                                                                                                                               | 5/32415 [00:00<28:01, 19.28it/s]We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [52:43<00:00, 10.25it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 32.18it/s]
+fatal: not a git repository (or any of the parent directories): .git
+EVALUATING MODEL:EleutherAI/pythia-160m WITH GUIDANCE SCALE:1.5
+config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 569/569 [00:00<00:00, 6.45MB/s]
+model.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375M/375M [00:01<00:00, 227MB/s]
+tokenizer_config.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 396/396 [00:00<00:00, 6.15MB/s]
+tokenizer.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.11M/2.11M [00:00<00:00, 5.05MB/s]
+special_tokens_map.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 99.0/99.0 [00:00<00:00, 1.33MB/s]
+2024-12-03:17:03:46,101 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:17:03:46,102 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:17:03:55,840 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:17:03:55,841 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:17:04:02,857 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:17:04:02,857 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:17:04:03,320 INFO     [evaluator.py:496] Running loglikelihood requests
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [26:46<00:00, 20.18it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 30.88it/s]
+fatal: not a git repository (or any of the parent directories): .git
+EVALUATING MODEL:gpt2-medium WITH GUIDANCE SCALE:1
+2024-12-03:17:31:03,792 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:17:31:03,792 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:17:31:13,176 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:17:31:13,177 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:17:31:20,202 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:17:31:20,202 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:17:31:20,501 INFO     [evaluator.py:496] Running loglikelihood requests
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [26:39<00:00, 20.27it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 31.12it/s]
+fatal: not a git repository (or any of the parent directories): .git
+EVALUATING MODEL:gpt2 WITH GUIDANCE SCALE:1
+2024-12-03:17:58:13,822 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:17:58:13,822 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:17:58:24,276 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:17:58:24,276 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:17:58:31,437 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:17:58:31,437 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:17:58:31,888 INFO     [evaluator.py:496] Running loglikelihood requests
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [13:04<00:00, 41.32it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 31.22it/s]
+fatal: not a git repository (or any of the parent directories): .git
+EVALUATING MODEL:EleutherAI/pythia-410m WITH GUIDANCE SCALE:1
+2024-12-03:18:11:50,211 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:18:11:50,212 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:18:11:59,913 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:18:11:59,913 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:18:12:06,635 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:18:12:06,635 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:18:12:07,252 INFO     [evaluator.py:496] Running loglikelihood requests
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [30:54<00:00, 17.48it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 30.64it/s]
+fatal: not a git repository (or any of the parent directories): .git
+EVALUATING MODEL:EleutherAI/pythia-160m WITH GUIDANCE SCALE:1
+2024-12-03:18:43:15,231 INFO     [evaluator.py:164] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2024-12-03:18:43:15,232 INFO     [evaluator.py:217] Using pre-initialized model
+2024-12-03:18:43:24,912 WARNING  [task.py:800] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2024-12-03:18:43:24,912 WARNING  [task.py:812] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2024-12-03:18:43:31,461 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:18:43:31,461 WARNING  [task.py:325] [Task: lambada_openai] has_training_docs and has_validation_docs are False, using test_docs as fewshot_docs but this is not recommended.
+2024-12-03:18:43:31,935 INFO     [evaluator.py:496] Running loglikelihood requests
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32415/32415 [15:17<00:00, 35.31it/s]
+bootstrapping for stddev: perplexity
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:03<00:00, 31.04it/s]
+fatal: not a git repository (or any of the parent directories): .git
+Results for arc_challenge saved to results/table5/arc_challenge_results.csv.
+Guidance Scale               1.0       1.5
+Model
+EleutherAI/pythia-160m  0.194539  0.189420
+EleutherAI/pythia-410m  0.214164  0.221843
+gpt2                    0.190273  0.198805
+gpt2-medium             0.215017  0.218430
+-----
+Results for arc_easy saved to results/table5/arc_easy_results.csv.
+Guidance Scale               1.0       1.5
+Model
+EleutherAI/pythia-160m  0.436448  0.460017
+EleutherAI/pythia-410m  0.518939  0.555135
+gpt2                    0.438131  0.459596
+gpt2-medium             0.490741  0.515152
+-----
+Results for boolq saved to results/table5/boolq_results.csv.
+Guidance Scale               1.0       1.5
+Model
+EleutherAI/pythia-160m  0.568502  0.585015
+EleutherAI/pythia-410m  0.605810  0.612844
+gpt2                    0.487156  0.569725
+gpt2-medium             0.585627  0.600612
+-----
+Results for sciq saved to results/table5/sciq_results.csv.
+Guidance Scale            1.0    1.5
+Model
+EleutherAI/pythia-160m  0.754  0.793
+EleutherAI/pythia-410m  0.815  0.843
+gpt2                    0.752  0.782
+gpt2-medium             0.774  0.811
+-----
+Results for winogrande saved to results/table5/winogrande_results.csv.
+Guidance Scale               1.0       1.5
+Model
+EleutherAI/pythia-160m  0.513023  0.509077
+EleutherAI/pythia-410m  0.532755  0.502762
+gpt2                    0.516180  0.505130
+gpt2-medium             0.531176  0.520916
+-----
+Results for lambada_openai saved to results/table5/lambada_openai_results.csv.
+Guidance Scale               1.0       1.5
+Model
+EleutherAI/pythia-160m  0.353775  0.480691
+EleutherAI/pythia-410m  0.516398  0.641180
+gpt2                    0.325636  0.445566
+gpt2-medium             0.429847  0.558121
+-----
