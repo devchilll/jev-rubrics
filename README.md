@@ -3,6 +3,9 @@
 Exploring calibrated "System One" decision models (e.g. TypeSafe AI's Jev) as fast rubric judges for
 paper-reproduction tasks, and possibly as reward models in RL.
 
+**Rebuilding or continuing the PaperBench work? Start with [PAPERBENCH_CONTEXT.md](PAPERBENCH_CONTEXT.md).**
+It holds the full context, exact method, results, tested setup commands and the related-dataset search.
+
 ## Reports
 1. **[REPORT_PaperBench_JudgeEval.md](REPORT_PaperBench_JudgeEval.md)** covers Jev on OpenAI's PaperBench JudgeEval
    ([paper](https://arxiv.org/abs/2504.01848), [data](https://github.com/openai/frontier-evals/tree/main/project/paperbench)),
